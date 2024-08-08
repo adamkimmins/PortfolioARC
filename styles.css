@@ -1,0 +1,165 @@
+/* General Styles */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+body, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+#Cheader {
+    position: sticky;
+    text-align: center;
+    top: 0;
+    color: rgb(256,256,256);
+    text-shadow: 3px 5px  rgb(5,5,5);
+    padding: 7px 0px;
+    background-image: linear-gradient(rgb(196, 46, 46), rgb(5,5,5));
+}
+#Pheader {
+    position: sticky;
+    display:flex;
+    align-items: right;
+    justify-content: space-between;
+    top: 0;
+    padding: 0px 20px;
+    color: rgb(256,256,256);
+    text-shadow: 3px 5px  rgb(5,5,5);
+    background-image: linear-gradient(rgb(196, 46, 46), rgb(5,5,5));
+}
+
+/* Navigation Styles */
+#nav1 #list1 {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 4px 0 7px;
+    margin: 0px 2px 0;
+    border:#000;
+    border-style: groove ;
+}
+#list2 li {
+            padding: 9vh 39vw;
+            width: 80px;
+            transition: max-height 3s ease-out;
+}
+#list2 {
+    display: inline-block;
+    flex-direction: column;
+    list-style-type: none;
+    position: fixed;
+    padding: 10px 10px 40px;
+    margin: -1px 0 0 0;
+    text-align: left;
+    background-color: rgb(5,5,5);
+}
+
+#nav2 {
+    display: none;
+    list-style-type: none;
+    flex-direction: column;
+    height: 110px;
+    position: fixed;
+    text-align: right;
+    top: 80px;
+}
+#nav2.nav-open {
+    display: flex;
+}
+i {
+    padding: 15px 5px;
+    font-size: 30px;
+    text-shadow: 5px 5px #000;
+    cursor: pointer;
+}
+i:hover {
+    color:#f44;
+    font-size: 30px;
+}
+i:active {
+    color: #f44;
+    font-size: 25px;
+    text-shadow: 0 1px #000;
+}
+
+nav ul li a {
+    color: rgb(256,256,256);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-shadow: 2px 3px  rgb(5,5,5);
+}
+
+nav ul li a:hover {
+    color: #f44336;
+}
+
+/* Section Styles */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    padding: 20px;
+}
+
+section:nth-child(even) {
+    /* background-color: #333;
+    color: #f1f1f1; */
+    background-image: linear-gradient(rgb(21,21,21), rgb(5,5,5));
+}
+
+section:nth-child(odd) {
+    /* background-color: #1a1a1a;
+    color: #f1f1f1; */
+    background-image: linear-gradient(rgb(5,5,5), rgb(21, 21, 21));
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(21,21,21);
+    color: #f1f1f1;
+    text-align: center;
+    border:10px rgb(0,0,0);
+    padding: 10px 0;
+}
+
+/* Phone Support */
+
+@media only screen and (max-width: 600px) {
+    #Cheader {
+        display: none;
+    }
+    #nav1 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #Pheader {
+        display: none;
+    }
+        #nav2 {
+            display: none;
+    }
+        #list2 {
+            display: none;
+    }
+
+}

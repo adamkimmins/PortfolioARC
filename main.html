@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adam - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/18a601aaa1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="Cheader">
+        <h1>Welcome to My Portfolio</h1>
+        <nav id="nav1">
+            <ul id="list1">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header id="Pheader">
+        <h1>My Portfolio</h1>
+        <i class="fa-solid fa-bars" id="icon"></i>
+    </header>
+    <nav id="nav2">
+        <ul id="list2">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Adam Kimmins, I am 19 years old, and I am currently studying 
+        Computer Science at Ohio University - Lancaster </p>
+        <br>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+            <li>HTML/CSS Website repository</li>
+            <li>C++ game: Tic-Tac-Toe</li>
+            <li>Python File Sorter</li>
+        </ol>
+        <p>*will add links to repositories soon if still not added</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Im a training software developer, I'm currently learning 
+            &#40;<em>from most used to least</em>&#41; 
+            - <strong>C, HTML/CSS, JS, Python, SQL.</strong> </p>
+            <p>I have some experience as a dev and a product owner in a scrum team.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2><br>
+        <p>(740) 304-2571<br>Adam.Kimmins23@Gmail.com</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Adam Kimmins</p>
+    </footer>
+</body>
+
+<!--JS-->
+<script>
+    document.getElementById('icon').addEventListener('click', function() {
+        var navMenu = document.getElementById('nav2');
+        if (navMenu.classList.contains('nav-open')) {
+            navMenu.classList.remove('nav-open');
+        } else {
+            navMenu.classList.add('nav-open');
+        }
+    });
+    document.getElementById('list2').addEventListener('click', function() {
+        var navMenu = document.getElementById('nav2');
+        if (navMenu.classList.contains('nav-open')) {
+            navMenu.classList.remove('nav-open');
+            
+        }
+    });
+            var icon = document.getElementById('icon');
+icon.addEventListener('touchstart', function() {
+    this.style.color = '#f44';
+    this.style.fontSize = '25px';
+    this.style.textShadow = '1px 1px #000';
+});
+
+icon.addEventListener('touchend', function() {
+    var self = this;
+    setTimeout(function() {
+        self.style.color = '#fff';
+        self.style.fontSize = '30px';
+        self.style.textShadow = '5px 5px #000';
+    }, 180);
+});
+</script>
+</html>
