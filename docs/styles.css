@@ -136,6 +136,10 @@ footer {
     padding: 10px 0;
 }
 
+.projectlink {
+    text-decoration: none;
+    color: beige;
+}
 /* Phone Support */
 
 @media only screen and (max-width: 600px) {
