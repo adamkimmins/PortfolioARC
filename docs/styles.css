@@ -149,7 +149,7 @@ footer {
 }
 /* Phone Support */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) and (orientation: portrait), only screen and (max-width: 800px) and (orientation: landscape){
     #Cheader {
         display: none;
     }
