@@ -142,7 +142,9 @@ footer {
 }
 /* Phone Support */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-device-width: 480px), 
+only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (max-device-width: 480px) and (min-resolution: 192dpi) {
     #Cheader {
         display: none;
     }
